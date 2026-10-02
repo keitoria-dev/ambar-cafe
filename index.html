@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Âmbar Café | Cafés, panquecas, croissants e doces</title>
+  <meta name="description" content="Cafés preparados na hora, panquecas, croissants e doces. Escolha seu favorito e peça pelo WhatsApp.">
+  <meta name="theme-color" content="#22110a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Figtree:wght@400;500;600&family=Unbounded:wght@500;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header" data-header>
+    <a class="brand" href="#inicio">Âmbar</a>
+    <nav class="nav" id="menu" aria-label="Principal">
+      <a href="#cardapio">Cardápio</a>
+      <a href="#historia">Sobre</a>
+      <a href="#visite">Visite</a>
+      <a class="btn btn--light" href="#contato" data-whats>Pedir no WhatsApp</a>
+    </nav>
+    <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+
+    <section class="slider" id="inicio" data-slider aria-roledescription="carrossel" aria-label="Nossos cafés">
+      <h1 class="sr-only">Âmbar Café</h1>
+
+      <div class="slide slide--mocha is-current">
+        <img class="bean bean--1" src="img/grao-1.webp" alt="">
+        <img class="bean bean--2" src="img/grao-2.webp" alt="">
+        <img class="bean bean--3" src="img/grao-2.webp" alt="">
+        <img class="bean bean--4" src="img/grao-1.webp" alt="">
+        <p class="word">Mocha</p>
+        <button class="peek" type="button" data-next aria-label="Ver Lungo">
+          <img src="img/lungo.webp" alt="">
+        </button>
+        <div class="cup">
+          <img src="img/mocha.webp" alt="Xícara de mocha">
+        </div>
+      </div>
+
+      <div class="slide slide--lungo">
+        <img class="bean bean--1" src="img/grao-2.webp" alt="">
+        <img class="bean bean--2" src="img/grao-1.webp" alt="">
+        <img class="bean bean--3" src="img/grao-1.webp" alt="">
+        <img class="bean bean--4" src="img/grao-2.webp" alt="">
+        <p class="word">Lungo</p>
+        <button class="peek" type="button" data-next aria-label="Ver Latte">
+          <img src="img/latte.webp" alt="">
+        </button>
+        <div class="cup">
+          <img src="img/lungo.webp" alt="Xícara de lungo">
+        </div>
+      </div>
+
+      <div class="slide slide--latte">
+        <img class="bean bean--1" src="img/grao-1.webp" alt="">
+        <img class="bean bean--2" src="img/grao-2.webp" alt="">
+        <img class="bean bean--3" src="img/grao-2.webp" alt="">
+        <img class="bean bean--4" src="img/grao-1.webp" alt="">
+        <p class="word">Latte</p>
+        <button class="peek" type="button" data-next aria-label="Ver Mocha">
+          <img src="img/mocha.webp" alt="">
+        </button>
+        <div class="cup">
+          <img src="img/latte.webp" alt="Xícara de latte">
+        </div>
+      </div>
+
+      <nav class="dots" aria-label="Escolher café">
+        <button class="dot is-active" type="button" aria-label="Mocha"></button>
+        <button class="dot" type="button" aria-label="Lungo"></button>
+        <button class="dot" type="button" aria-label="Latte"></button>
+      </nav>
+
+      <a class="btn btn--outline hero-cta" href="#categorias">Ver cardápio</a>
+    </section>
+
+    <section class="section cats-section" id="categorias">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <h2 class="title">Do café da manhã à sobremesa</h2>
+            <p class="lead">Escolha uma categoria e veja o que está saindo da cozinha hoje.</p>
+          </div>
+          <a class="btn btn--outline" href="#escolha" data-cat-link="todos">Ver cardápio completo</a>
+        </div>
+
+        <div class="cats">
+          <a class="cat" href="#escolha" data-cat-link="cafes">
+            <span class="cat__img">
+              <img src="img/cappuccino.webp" alt="" style="--pos: 50% 55%" loading="lazy" decoding="async">
+            </span>
+            <span class="cat__name">Cafés</span>
+          </a>
+          <a class="cat" href="#escolha" data-cat-link="panquecas">
+            <span class="cat__img">
+              <img src="img/panqueca-morango.webp" alt="" style="--pos: 50% 55%" loading="lazy" decoding="async">
+            </span>
+            <span class="cat__name">Panquecas</span>
+          </a>
+          <a class="cat" href="#escolha" data-cat-link="croissants">
+            <span class="cat__img">
+              <img src="img/croissant-mirtilo.webp" alt="" style="--pos: 50% 45%" loading="lazy" decoding="async">
+            </span>
+            <span class="cat__name">Croissants</span>
+          </a>
+          <a class="cat" href="#escolha" data-cat-link="doces">
+            <span class="cat__img">
+              <img src="img/donut-chocolate.webp" alt="" style="--pos: 50% 60%" loading="lazy" decoding="async">
+            </span>
+            <span class="cat__name">Doces</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section menu" id="cardapio">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <h2 class="title">Nosso cardápio</h2>
+            <p class="lead">Toque em pedir e a mensagem já vai pronta no WhatsApp.</p>
+          </div>
+        </div>
+
+        <article class="spot">
+          <div class="spot__media">
+            <img src="img/panqueca-frutas-vermelhas.webp" alt="Panquecas com frutas vermelhas" style="--pos: 50% 40%" loading="lazy" decoding="async">
+            <span class="spot__price">R$ 28</span>
+          </div>
+          <div class="spot__text">
+            <span class="script script--lg">Destaque da casa</span>
+            <h3 class="spot__name">Panquecas com frutas vermelhas</h3>
+            <p class="spot__card">Massa fofinha empilhada com creme de avelã, morangos, amoras e açúcar de confeiteiro. Servida quentinha, do jeito que pede um café ao lado.</p>
+            <div class="spot__actions">
+              <a class="btn btn--dark" href="#contato" data-whats="Panquecas com frutas vermelhas">Pedir agora</a>
+              <a class="btn btn--outline" href="#escolha">Explorar mais</a>
+            </div>
+          </div>
+        </article>
+
+        <div class="menu__bar" id="escolha">
+          <div class="chips" role="group" aria-label="Filtrar por categoria">
+          <button class="chip is-active" type="button" data-filter="todos" aria-pressed="true">Todos</button>
+          <button class="chip" type="button" data-filter="cafes" aria-pressed="false">Cafés</button>
+          <button class="chip" type="button" data-filter="panquecas" aria-pressed="false">Panquecas</button>
+          <button class="chip" type="button" data-filter="croissants" aria-pressed="false">Croissants</button>
+          <button class="chip" type="button" data-filter="doces" aria-pressed="false">Doces</button>
+          </div>
+          <div class="arrows">
+            <button class="arrow" type="button" data-arrow="-1" aria-label="Anterior">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+            </button>
+            <button class="arrow" type="button" data-arrow="1" aria-label="Próximo">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="track" data-track>
+          <article class="item" data-cat="cafes">
+            <div class="item__photo item__photo--cup item__photo--mocha">
+              <img src="img/mocha.webp" alt="Xícara de mocha" loading="lazy" decoding="async">
+            </div>
+            <span class="item__price">R$ 16</span>
+            <div class="item__body">
+              <span class="script">Café</span>
+              <h3 class="item__name">Mocha</h3>
+              <p class="item__text">Espresso com chocolate e leite vaporizado. Intenso, macio e aconchegante.</p>
+              <a class="btn btn--sm" href="#contato" data-whats="Mocha">Pedir</a>
+            </div>
+          </article>
+          <article class="item" data-cat="cafes">
+            <div class="item__photo item__photo--cup item__photo--lungo">
+              <img src="img/lungo.webp" alt="Xícara de lungo" loading="lazy" decoding="async">
+            </div>
+            <span class="item__price">R$ 12</span>
+            <div class="item__body">
+              <span class="script">Café</span>
+              <h3 class="item__name">Lungo</h3>
+              <p class="item__text">Espresso alongado, suave e aromático, com espuma cremosa. Para tomar com calma.</p>
+              <a class="btn btn--sm" href="#contato" data-whats="Lungo">Pedir</a>
+            </div>
+          </article>
+          <article class="item" data-cat="cafes">
+            <div class="item__photo item__photo--cup item__photo--latte">
+              <img src="img/latte.webp" alt="Xícara de latte" loading="lazy" decoding="async">
+            </div>
+            <span class="item__price">R$ 14</span>
+            <div class="item__body">
+              <span class="script">Café</span>
+              <h3 class="item__name">Latte</h3>
+              <p class="item__text">Espresso com bastante leite vaporizado e arte na xícara. Leve, doce e cremoso.</p>
+              <a class="btn btn--sm" href="#contato" data-whats="Latte">Pedir</a>
+            </div>
+          </article>
+          <article class="item" data-cat="cafes">
+            <div class="item__photo">
+              <img src="img/cappuccino.webp" alt="Cappuccino" style="--pos: 50% 55%" loading="lazy" decoding="async">
+            </div>
+            <span class="item__price">R$ 12</span>
+            <div class="item__body">
+              <span class="script">Café</span>
+              <h3 class="item__name">Cappuccino</h3>
+              <p class="item__text">Espresso com leite vaporizado e arte na xícara. Equilibrado e macio.</p>
+              <a class="btn btn--sm" href="#contato" data-whats="Cappuccino">Pedir</a>
+            </div>
+          </article>
+          <article class="item" data-cat="cafes">
+            <div class="item__photo">
+              <img src="img/cafe-espresso.webp" alt="Espresso" style="--pos: 50% 40%" loading="lazy" decoding="async">
+            </div>
+            <span class="item__price">R$ 7</span>
+            <div class="item__body">
+              <span class="script">Café</span>
+              <h3 class="item__name">Espresso</h3>
+              <p class="item__text">Curto, intenso e aromático. Para quem gosta de café de verdade.</p>
+              <a class="btn btn--sm" href="#contato" data-whats="Espresso">Pedir</a>
+            </div>
+          </article>
+          <article class="item" data-cat="cafes">
+            <div class="item__photo">
+              <img src="img/cafe-chantilly.webp" alt="Café com chantilly" style="--pos: 50% 50%" loading="lazy" decoding="async">
+            </div>
+            <span class="item__price">R$ 16</span>
+            <div class="item__body">
+              <span class="script">Café</span>
+              <h3 class="item__name">Café com chantilly</h3>
+              <p class="item__text">Camadas de café e leite com chantilly e cacau por cima.</p>
+              <a class="btn btn--sm" href="#contato" data-whats="Café com chantilly">Pedir</a>
+            </div>
+          </article>
+          <article class="item" data-cat="cafes">
+            <div class="item__photo">
+              <img src="img/frappe-chocolate.webp" alt="Frappé de chocolate" style="--pos: 50% 45%" loading="lazy" decoding="async">
+            </div>
+            <span class="item__price">R$ 18</span>
+            <div class="item__body">
+              <span class="script">Café</span>
+              <h3 class="item__name">Frappé de chocolate</h3>
+              <p class="item__text">Gelado e cremoso, com calda de chocolate e chantilly.</p>
+              <a class="btn btn--sm" href="#contato" data-whats="Frappé de chocolate">Pedir</a>
+            </div>
+          </article>
+          <article class="item" data-cat="panquecas">
+            <div class="item__photo">
+              <img src="img/panqueca-morango.webp" alt="Panquecas com morango e mel" style="--pos: 50% 55%" loading="lazy" decoding="async">
+            </div>
+            <span class="item__price">R$ 24</span>
+            <div class="item__body">
+              <span class="script">Panqueca</span>
+              <h3 class="item__name">Panquecas com morango e mel</h3>
+              <p class="item__text">Pilha de panquecas fofinhas com morangos frescos e um fio de mel.</p>
+              <a class="btn btn--sm" href="#contato" data-whats="Panquecas com morango e mel">Pedir</a>
+            </div>
+          </article>
+          <article class="item" data-cat="panquecas">
+            <div class="item__photo">
+              <img src="img/panqueca-chocolate.webp" alt="Panquecas de chocolate" style="--pos: 50% 80%" loading="lazy" decoding="async">
+            </div>
+            <span class="item__price">R$ 26</span>
+            <div class="item__body">
+              <span class="script">Panqueca</span>
+              <h3 class="item__name">Panquecas de chocolate</h3>
+              <p class="item__text">Camadas de panqueca com creme de chocolate e framboesas.</p>
+              <a class="btn btn--sm" href="#contato" data-whats="Panquecas de chocolate">Pedir</a>
+            </div>
+          </article>
+          <article class="item" data-cat="panquecas">
+            <div class="item__photo">
+              <img src="img/panqueca-banana.webp" alt="Panquecas com banana e kiwi" style="--pos: 50% 80%" loading="lazy" decoding="async">
+            </div>
+            <span class="item__price">R$ 25</span>
+            <div class="item__body">
+              <span class="script">Panqueca</span>
+              <h3 class="item__name">Panquecas com banana e kiwi</h3>
+              <p class="item__text">Banana, kiwi e calda de chocolate sobre panquecas douradinhas.</p>
+              <a class="btn btn--sm" href="#contato" data-whats="Panquecas com banana e kiwi">Pedir</a>
+            </div>
+          </article>
+          <article class="item" data-cat="croissants">
+            <div class="item__photo">
+              <img src="img/croissant-mirtilo.webp" alt="Croissant de mirtilo" style="--pos: 50% 45%" loading="lazy" decoding="async">
+            </div>
+            <span class="item__price">R$ 18</span>
+            <div class="item__body">
+              <span class="script">Croissant</span>
+              <h3 class="item__name">Croissant de mirtilo</h3>
+              <p class="item__text">Croissant crocante com creme e cobertura de mirtilos.</p>
+              <a class="btn btn--sm" href="#contato" data-whats="Croissant de mirtilo">Pedir</a>
+            </div>
+          </article>
+          <article class="item" data-cat="croissants">
+            <div class="item__photo">
+              <img src="img/croissant-ovo-salmao.webp" alt="Croissant com ovo e salmão" style="--pos: 50% 40%" loading="lazy" decoding="async">
+            </div>
+            <span class="item__price">R$ 28</span>
+            <div class="item__body">
+              <span class="script">Croissant</span>
+              <h3 class="item__name">Croissant com ovo e salmão</h3>
+              <p class="item__text">Ovo, salmão, abacate e brotos num croissant integral.</p>
+              <a class="btn btn--sm" href="#contato" data-whats="Croissant com ovo e salmão">Pedir</a>
+            </div>
+          </article>
+          <article class="item" data-cat="croissants">
+            <div class="item__photo">
+              <img src="img/croissant-presunto.webp" alt="Croissant de presunto e rúcula" style="--pos: 50% 70%" loading="lazy" decoding="async">
+            </div>
+            <span class="item__price">R$ 22</span>
+            <div class="item__body">
+              <span class="script">Croissant</span>
+              <h3 class="item__name">Croissant de presunto e rúcula</h3>
+              <p class="item__text">Cream cheese, presunto e rúcula, finalizado com gergelim.</p>
+              <a class="btn btn--sm" href="#contato" data-whats="Croissant de presunto e rúcula">Pedir</a>
+            </div>
+          </article>
+          <article class="item" data-cat="croissants">
+            <div class="item__photo">
+              <img src="img/croissant-pistache.webp" alt="Croissant de pistache" style="--pos: 50% 55%" loading="lazy" decoding="async">
+            </div>
+            <span class="item__price">R$ 24</span>
+            <div class="item__body">
+              <span class="script">Croissant</span>
+              <h3 class="item__name">Croissant de pistache</h3>
+              <p class="item__text">Cobertura cremosa de chocolate branco com pistache.</p>
+              <a class="btn btn--sm" href="#contato" data-whats="Croissant de pistache">Pedir</a>
+            </div>
+          </article>
+          <article class="item" data-cat="doces">
+            <div class="item__photo">
+              <img src="img/donut-chocolate.webp" alt="Donuts de chocolate" style="--pos: 50% 60%" loading="lazy" decoding="async">
+            </div>
+            <span class="item__price">R$ 10</span>
+            <div class="item__body">
+              <span class="script">Doce</span>
+              <h3 class="item__name">Donuts de chocolate</h3>
+              <p class="item__text">Cobertos de chocolate com granulado colorido.</p>
+              <a class="btn btn--sm" href="#contato" data-whats="Donuts de chocolate">Pedir</a>
+            </div>
+          </article>
+          <article class="item" data-cat="doces">
+            <div class="item__photo">
+              <img src="img/donut-acucar.webp" alt="Donuts de açúcar" style="--pos: 50% 50%" loading="lazy" decoding="async">
+            </div>
+            <span class="item__price">R$ 9</span>
+            <div class="item__body">
+              <span class="script">Doce</span>
+              <h3 class="item__name">Donuts de açúcar</h3>
+              <p class="item__text">Macios e passados no açúcar, do jeito clássico.</p>
+              <a class="btn btn--sm" href="#contato" data-whats="Donuts de açúcar">Pedir</a>
+            </div>
+          </article>
+          <article class="item" data-cat="doces">
+            <div class="item__photo">
+              <img src="img/cookie-chocolate.webp" alt="Cookies de chocolate" style="--pos: 50% 60%" loading="lazy" decoding="async">
+            </div>
+            <span class="item__price">R$ 8</span>
+            <div class="item__body">
+              <span class="script">Doce</span>
+              <h3 class="item__name">Cookies de chocolate</h3>
+              <p class="item__text">Crocantes por fora, macios por dentro, com gotas de chocolate.</p>
+              <a class="btn btn--sm" href="#contato" data-whats="Cookies de chocolate">Pedir</a>
+            </div>
+          </article>
+          <article class="item" data-cat="doces">
+            <div class="item__photo">
+              <img src="img/biscoito-geleia.webp" alt="Biscoitos com geleia" style="--pos: 50% 60%" loading="lazy" decoding="async">
+            </div>
+            <span class="item__price">R$ 6</span>
+            <div class="item__body">
+              <span class="script">Doce</span>
+              <h3 class="item__name">Biscoitos com geleia</h3>
+              <p class="item__text">Biscoitinhos amanteigados com geleia de frutas vermelhas.</p>
+              <a class="btn btn--sm" href="#contato" data-whats="Biscoitos com geleia">Pedir</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" aria-labelledby="band-title">
+      <div class="band__media">
+        <img src="img/vitrine.webp" alt="" data-parallax loading="lazy" decoding="async">
+      </div>
+      <div class="wrap band__wrap">
+        <div class="band__box">
+          <h2 class="title" id="band-title">Seu café favorito a uma mensagem de distância</h2>
+          <p class="lead">Escolha a bebida, mande o pedido e a gente deixa pronto para você.</p>
+          <a class="btn btn--light btn--lg" href="#contato" data-whats>Pedir no WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section features-section" id="diferenciais">
+      <div class="wrap">
+        <h2 class="title title--center">Feito para quem ama café</h2>
+
+        <ul class="features">
+          <li class="feature">
+            <span class="feature__icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="12" rx="6" ry="9" transform="rotate(35 12 12)"/><path d="M8.5 7.5c3.5 1 4.5 5 7 9"/></svg>
+            </span>
+            <h3>Grãos selecionados</h3>
+            <p>Trabalhamos com grãos de qualidade para um café aromático e de final doce.</p>
+          </li>
+          <li class="feature">
+            <span class="feature__icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            </span>
+            <h3>Preparo na hora</h3>
+            <p>Cada bebida sai da máquina direto para a sua mão, quentinha e no ponto.</p>
+          </li>
+          <li class="feature">
+            <span class="feature__icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1 12H6z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg>
+            </span>
+            <h3>Pedido sem fila</h3>
+            <p>Peça pelo WhatsApp e retire no balcão quando estiver pronto.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section story" id="historia">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <h2 class="title">Um café com jeito de casa</h2>
+            <p class="lead">Do primeiro grão à última mordida, tudo aqui é feito para você ficar mais um pouquinho.</p>
+          </div>
+          <a class="btn btn--outline-light" href="#visite">Conheça o espaço</a>
+        </div>
+
+        <div class="story__grid">
+          <div class="story__beans" aria-hidden="true">
+            <img class="spin-bean spin-bean--1" data-spin="0.18" src="img/grao-1.webp" alt="" loading="lazy">
+            <img class="spin-bean spin-bean--2" data-spin="-0.14" src="img/grao-2.webp" alt="" loading="lazy">
+          </div>
+          <div class="story__text">
+            <div class="story__who">
+              <span class="story__avatar">
+                <img src="img/cappuccino.webp" alt="" style="--pos: 50% 55%" loading="lazy" decoding="async">
+              </span>
+              <div>
+                <p class="story__name">Âmbar Café</p>
+                <p class="story__role">Cafeteria e doceria</p>
+              </div>
+            </div>
+            <p>A Âmbar nasceu da vontade de servir café de verdade, no ponto certo, junto com pães, doces e panquecas feitos todo dia.</p>
+            <p>Cada receita passa pela cozinha com calma e carinho, e a gente só serve o que gostaria de comer na própria mesa.</p>
+            <a class="btn btn--light" href="#contato" data-whats>Falar no WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="momentos">
+      <div class="wrap">
+        <div class="gallery-head">
+          <h2 class="title title--center">Momentos Âmbar</h2>
+          <a class="btn btn--outline" href="https://instagram.com/ambarcafe" target="_blank" rel="noopener">Seguir no Instagram</a>
+        </div>
+
+        <div class="gallery">
+          <figure class="gallery__item">
+            <img src="img/croissant-pistache.webp" alt="Croissants de pistache e Lotus" style="--pos: 50% 55%" loading="lazy" decoding="async">
+          </figure>
+          <figure class="gallery__item">
+            <img src="img/cookie-chocolate.webp" alt="Cookies com gotas de chocolate" style="--pos: 50% 60%" loading="lazy" decoding="async">
+          </figure>
+          <figure class="gallery__item">
+            <img src="img/panqueca-banana.webp" alt="Panquecas com banana e kiwi" style="--pos: 50% 80%" loading="lazy" decoding="async">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section visit" id="visite">
+      <div class="wrap">
+        <h2 class="title">Venha tomar um café</h2>
+
+        <div class="visit__grid">
+          <div>
+            <h3>Endereço</h3>
+            <p>Rua Exemplo, 123<br>Bairro, Cidade</p>
+          </div>
+          <div>
+            <h3>Horário</h3>
+            <p>Segunda a sexta, 8h às 19h<br>Sábado, 9h às 17h</p>
+          </div>
+          <div>
+            <h3>Contato</h3>
+            <p>@ambarcafe<br>(00) 00000-0000</p>
+          </div>
+        </div>
+
+        <div class="visit__actions" id="contato">
+          <a class="btn btn--dark" href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Exemplo+123" target="_blank" rel="noopener">Como chegar</a>
+          <a class="btn btn--outline" href="#contato" data-whats>Chamar no WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__row">
+      <a class="brand" href="#inicio">Âmbar</a>
+      <p>© 2026 Âmbar Café. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <a class="float" href="#contato" data-float data-whats aria-label="Pedir no WhatsApp">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true">
+      <path d="M4 5h16v11H10l-6 4z"/>
+    </svg>
+    <span>Pedir</span>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
