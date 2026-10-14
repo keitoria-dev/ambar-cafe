@@ -1,4 +1,4 @@
-const WHATSAPP = "5585988149571";
+const WHATSAPP = "5585900000000";
 const GREETING = "Olá! Vim pelo site e quero fazer um pedido.";
 
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
